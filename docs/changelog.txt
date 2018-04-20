@@ -1,5 +1,0 @@
-Changelog for RedisSession
-
-RedisSession 0.1.2
----------------------------------
-Initial Version
