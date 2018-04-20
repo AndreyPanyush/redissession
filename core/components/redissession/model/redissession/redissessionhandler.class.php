@@ -74,7 +74,6 @@ class RedisSessionHandler extends \SessionHandler {
      * @param modX $modx
      */
     public function __construct(modX $modx) {
-        ini_set('session.serialize_handler', 'php_serialize');
         session_set_save_handler(
             array(&$this, 'open'),
             array(&$this, 'close'),
@@ -105,8 +104,8 @@ class RedisSessionHandler extends \SessionHandler {
         $this->redis = new Redis();
         $this->modx->redisSession_redis = &$this->redis;
         $this->redis->pconnect($this->modx->getOption('redissession_server'), $this->modx->getOption('redissession_port', null, 6379), $connection_timeout);
-        if($this->modx->getOption('redissession_password') !== false) $this->redis->auth($this->modx->getOption('redissession_password'));
         if($this->modx->getOption('redissession_db') !== false) $this->redis->select($this->modx->getOption('redissession_db'));
+        if($this->modx->getOption('redissession_password') !== false) $this->redis->auth($this->modx->getOption('redissession_password'));
 
         $this->locked = false;
         $this->lockKey = null;

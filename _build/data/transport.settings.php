@@ -102,7 +102,7 @@ $systemSettings[8]->fromArray(array (
   'description' => 'redissession_password_description',
   'namespace' => 'redissession',
   'xtype' => 'textfield',
-  'value' => '0',
+  'value' => '',
   'area' => 'redissession.main',
 ), '', true, true);
 return $systemSettings;
