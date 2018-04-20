@@ -101,8 +101,18 @@ $systemSettings[8]->fromArray(array (
   'name' => 'redissession_password',
   'description' => 'redissession_password_description',
   'namespace' => 'redissession',
-  'xtype' => 'textfield',
+  'xtype' => 'text-password',
   'value' => '',
   'area' => 'redissession.main',
+), '', true, true);
+$systemSettings[9] = $modx->newObject('modSystemSetting');
+$systemSettings[9]->fromArray(array (
+    'key' => 'redissession_serialize_handler',
+    'name' => 'redissession_serialize_handler',
+    'description' => 'redissession_serialize_handler_description',
+    'namespace' => 'redissession',
+    'xtype' => 'textfield',
+    'value' => '',
+    'area' => 'redissession.main',
 ), '', true, true);
 return $systemSettings;

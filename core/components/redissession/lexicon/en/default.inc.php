@@ -70,3 +70,5 @@ $_lang['setting_redissession_db'] = 'Redis database';
 $_lang['setting_redissession_db_desc'] = '';
 $_lang['setting_redissession_password'] = 'Redis password';
 $_lang['setting_redissession_password_desc'] = '';
+$_lang['setting_redissession_serialize_handler'] = 'PHP session serialize handler';
+$_lang['setting_redissession_serialize_handler_desc'] = 'The name of the handler which serialize/deserialize session data. See <a href="http://php.net/manual/en/session.configuration.php#ini.session.serialize-handler" target="_blank">http://php.net/manual/en/session.configuration.php#ini.session.serialize-handler</a>';

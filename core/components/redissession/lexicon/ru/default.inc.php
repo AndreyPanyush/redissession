@@ -1,4 +1,4 @@
-    <?php
+<?php
 /**
  * ru default topic lexicon file for RedisSession extra
  *
@@ -47,7 +47,7 @@
 
 /* Used in transport.menus.php */
 $_lang['redissession_flush'] = 'RedisSession: Завершить все сеансы';
-$_lang['redissession_flush_desc'] = 'Immediately destroy all sessions stored in Redis';
+$_lang['redissession_flush_desc'] = 'Немедленно завершить все сессии в Redis';
 $_lang['redissession_flush_sessions'] = 'RedisSession: Завершить все сеансы';
 $_lang['redissession_flush_sessions_confirm'] = 'Вы уверены, что хотите завершить сеансы всех пользователей? Будут завершены сеансы всех пользователей';
 $_lang['redissession_flush_sessions_err'] = 'Произошла ошибка при попытке завершить сеанс текущего пользователя.';
@@ -70,3 +70,5 @@ $_lang['setting_redissession_db'] = 'Номер базы данных Redis';
 $_lang['setting_redissession_db_desc'] = '';
 $_lang['setting_redissession_password'] = 'Пароль Redis';
 $_lang['setting_redissession_password_desc'] = '';
+$_lang['setting_redissession_serialize_handler'] = 'Обработчик сериализации/десериализации сессий PHP';
+$_lang['setting_redissession_serialize_handler_desc'] = 'Имя обработчика, который используется для сериализации/десериализации данных сессий. См. <a href="http://php.net/manual/ru/session.configuration.php#ini.session.serialize-handler" target="_blank">http://php.net/manual/ru/session.configuration.php#ini.session.serialize-handler</a>';

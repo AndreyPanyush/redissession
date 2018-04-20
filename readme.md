@@ -12,6 +12,7 @@ Provide session management over Redis
 <ul>
     <li>modx-2.2.0</li>
     <li>phpredis-3.0.0</li>
+    <li>php-5.4 for basic support</li>
     <li>php-5.5.1 for custom session id</li>
 </ul>
 <h3>Installing RedisSession</h3>

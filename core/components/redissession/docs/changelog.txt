@@ -1,5 +1,12 @@
 Changelog for RedisSession
 
+
+RedisSession 0.1.3
+---------------------------------
+- Added serialize_handler setting
+- Bug fixes
+- Added support for PHP 5.4
+
 RedisSession 0.1.2
 ---------------------------------
 Initial Version
